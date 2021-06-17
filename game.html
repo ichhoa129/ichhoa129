@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ich Hoa || Game</title>
+    <link rel="icon" href="/icon/favicon-16x16.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    <script src="./assets/p5lib/p5.js"></script>
+    <script src="./assets/p5lib/p5.dom.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+         }
+
+        body {
+            background: #5c7ba7;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+
+        canvas {
+            transform: translateY(25%);
+        }
+
+        h3 {
+            display: none;
+        }
+
+        @media screen and (max-width: 1024px){
+            .p5Canvas {
+                display: none;
+            }
+
+            h3 {
+                display: block;
+                color: rgb(61, 24, 24);
+                position: absolute;
+                font-family: sans-serif;
+                top: 50%;
+                left: 4em;
+            } 
+        }
+
+        a {
+            position: absolute;
+            left: 2%;
+            top: 2%;
+            font-size: 2rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            transition: transform ease-in-out 0.3s;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #213f69;
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>GAME IS NOT AVAILABLE ON MOBILE </h3>
+    <a href="index.html">HOME</a>
+</body>
+
+<script src="./assets/ballGame/pipes.js"></script>
+<script src="./assets/ballGame/balls.js"></script>
+<script src="./assets/ballGame/sketch.js"></script>
+
+</html>
