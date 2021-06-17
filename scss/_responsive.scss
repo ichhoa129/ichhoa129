@@ -6,14 +6,28 @@
     }
   }
 
-  .contact__list {
-    flex-direction: column;
-  }
+  .contact {
 
-  .contact__email,
-  .contact__phone {
-    margin-right: 0;
-    margin-bottom: 40px;
+    padding-top: 25vh;
+
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+    ),
+    url('../img/model.jpg') center top;
+    background-size: cover;
+
+    .contact__list {
+      flex-direction: column;
+    }
+  
+    .contact__email,
+    .contact__phone {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
   }
 }
 

@@ -241,7 +241,7 @@
   align-items: center;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/me.jpg") center top;
   background-size: cover;
-  background-position: right; }
+  background-position: left; }
   .contact h2 {
     font-size: 3rem;
     margin-bottom: 2rem; }
@@ -260,12 +260,16 @@
   .projects .projects__bio-image {
     background-size: cover;
     background-position-y: 50%; }
-  .contact__list {
-    flex-direction: column; }
-  .contact__email,
-  .contact__phone {
-    margin-right: 0;
-    margin-bottom: 40px; } }
+  .contact {
+    padding-top: 25vh;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model.jpg") center top;
+    background-size: cover; }
+    .contact .contact__list {
+      flex-direction: column; }
+    .contact .contact__email,
+    .contact .contact__phone {
+      margin-right: 0;
+      margin-bottom: 40px; } }
 
 @media screen and (min-width: 768px) {
   .menu-btn {
