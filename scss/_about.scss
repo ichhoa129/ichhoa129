@@ -29,6 +29,10 @@
         .text-secondary {
             padding-bottom: 1rem;
         }
+
+        &-text {
+            line-height: 1.4;
+        }
     }
 
     .jobs {
@@ -44,11 +48,15 @@
             border-bottom: 5px solid $secondary-color;
 
             h2, h3 {
-                margin: 0.5rem 0;
+                margin: 0.7rem 0;
             }
 
             h6 {
-                margin: 0.3rem 0;
+                margin: 0.5rem 0;
+            }
+
+            p {
+                line-height: 1.4;
             }
         }
     }

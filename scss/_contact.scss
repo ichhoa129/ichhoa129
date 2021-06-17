@@ -21,10 +21,13 @@
     }
 
     &__list {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem;
+        display: flex;
         font-size: 1.5rem;
+    }
+
+    &__email,
+    &__phone {
+        margin-right: 40px;
     }
 
     .social-icons {
