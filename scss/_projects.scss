@@ -1,3 +1,5 @@
+
+
 .projects {
     padding-bottom: 2rem;
 
@@ -36,6 +38,8 @@
         border-bottom: 5px solid $secondary-color;
         overflow: hidden;
         cursor: pointer;
+        max-height: 213px;
+        max-width: 315px;
 
         img {
             width: 100%;
