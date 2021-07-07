@@ -6,133 +6,134 @@
     }
 
     &__item {
-        max-height: 134.56px;
-        max-width: 225px;
+      max-height: 134.56px;
+      max-width: 225px;
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
   .contact {
-
     padding-top: 25vh;
 
-    background: 
-    linear-gradient(
+    background: linear-gradient(
         to right,
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
-    ),
-    url('../img/model.jpg') center top;
+      ),
+      url('../img/model.jpg') center top;
     background-size: cover;
 
     .contact__list {
       flex-direction: column;
     }
-  
+
     .contact__email,
     .contact__phone {
       margin-right: 0;
       margin-bottom: 40px;
     }
+  }
+
+  .game-item {
+    display: none;
   }
 }
 
 @include media-md {
-    .menu-btn {
-      visibility: hidden;
-    }
-  
-    .nav {
-      visibility: visible;
-  
-      .menu-nav {
-        display: block;
-        transform: translateY(0);
-        height: 100%;
-        background: transparent;
-        text-align: right;
-  
-        &__item {
-          display: inline;
-          padding-right: 1.5rem;
-        }
-  
-        &__link {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  
-    .about__bio {
-      font-size: 1.5rem;
-    }
-  
-    .projects {
-      &__bio-image {
-        height: 40vh;
-      }
+  .menu-btn {
+    visibility: hidden;
+  }
 
-      &__items {
-        grid-template-columns: repeat(2, 1fr);
-      }
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
 
       &__item {
-        max-height: 176.06px;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-    }
-      .text-secondary {
-        font-size: 3rem;
+        display: inline;
+        padding-right: 1.5rem;
       }
-    }
-  
-    .contact__list {
-      flex-direction: column;
-    }
-  
-    .contact__email,
-    .contact__phone {
-      margin-right: 0;
-      margin-bottom: 40px;
+
+      &__link {
+        font-size: 1.5rem;
+      }
     }
   }
-  
-  @include media-lg {
-    .projects {
-      &__items {
-        grid-template-columns: repeat(3, 1fr);
+
+  .about__bio {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    &__bio-image {
+      height: 40vh;
+    }
+
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      max-height: 176.06px;
+
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
-    .contact__list {
-      flex-direction: row;
+    .text-secondary {
+      font-size: 3rem;
     }
+  }
 
-    .contact__email,
-    .contact__phone {
-      margin-right: 40px;
-      margin-bottom: 0;
-    }
+  .contact__list {
+    flex-direction: column;
+  }
 
+  .contact__email,
+  .contact__phone {
+    margin-right: 0;
     margin-bottom: 40px;
   }
-  
-  @include media-xl {
-    .projects__bio-image {
-      height: 50vh;
-    }
+  .game-item {
+    display: none;
+  }
+}
 
-    .contact__email,
-    .contact__phone {
-      margin-right: 50px;
-      margin-bottom: 0;
+@include media-lg {
+  .projects {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
+  .contact__list {
+    flex-direction: row;
+  }
+
+  .contact__email,
+  .contact__phone {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+@include media-xl {
+  .projects__bio-image {
+    height: 50vh;
+  }
+
+  .contact__email,
+  .contact__phone {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}

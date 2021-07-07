@@ -1,41 +1,40 @@
 .contact {
-    height: 100%;
-    padding-top: 40vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    background: 
-    linear-gradient(
-        to right,
-        rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
     ),
     url('../img/me.jpg') center top;
-    background-size: cover;
-    background-position: left;
+  background-size: cover;
+  background-position: left;
 
-    h2 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-    }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
 
-    &__list {
-        display: flex;
-        font-size: 1.5rem;
-    }
+  &__list {
+    display: flex;
+    font-size: 1.5rem;
+  }
 
-    &__email,
-    &__phone {
-        margin-right: 40px;
-    }
+  &__email,
+  &__phone {
+    margin-right: 40px;
+  }
 
-    .social-icons {
-        position: initial;
-        margin-top: 2rem;
-    }
+  .social-icons {
+    position: initial;
+    margin-top: 2rem;
+  }
 
-    .text-secondary {
-        margin-top: 6px;
-    }
+  .text-secondary {
+    margin-top: 6px;
+  }
 }
